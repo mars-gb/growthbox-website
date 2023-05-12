@@ -21,7 +21,7 @@ body{
 	flex-direction: row;
 }
 
-@media (max-width: 899px) { 
+@media (max-width: 767.98px) { 
 	.page-wrapper{
 		flex-direction: column;
 		gap: 120px;
