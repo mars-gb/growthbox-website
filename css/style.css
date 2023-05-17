@@ -18,16 +18,9 @@ body{
 
 .page-wrapper{
 	display: flex;
-	flex-direction: column;
-	gap: 120px;
-	
+	flex-direction: row;
 }
 
-@media screen and (min-width: 767px) {
-  .page-wrapper {
-    flex-direction: row;
-  }
-}
 
 .left{
 	flex-grow: 1;
@@ -70,4 +63,22 @@ h1{
 }
 .contact a:hover{
 	opacity: 0.5;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+
+    .page-wrapper {
+	    flex-direction: column;
+	    gap: 40px;
+	  }
+
+	 h1{
+	 	font-size: 32px;
+	 }
+
+	 .services{
+	 	grid-row-gap: 16px;
+	 	font-size:16px;
+	 }
 }
